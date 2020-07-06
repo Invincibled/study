@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+
+    <script>
+        // function f() {
+        //      this.age = 10;
+        //      this.name  = "张sn"
+        // }
+        // var obj = new f()
+        // //prototype不就是强类型语言的类么？
+        // 还是不太一样的，这个prototype相当于一种动态扩展类的机制.kotlin中，到是有这种形式
+        // console.log(obj)
+
+        class Person{
+
+            // constructor(name , age) {
+            //     this.name = name
+            //     this.age = age
+            // }
+            constructor(name) {
+                this.name = name;
+            }
+        }
+
+        var p = new Person("111")
+        alert(p.name)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+</html>
