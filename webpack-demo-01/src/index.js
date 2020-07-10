@@ -22,5 +22,5 @@
 // console.log(add(2,1))
 
 import './style.css'
-import
+import './style.less'
 
