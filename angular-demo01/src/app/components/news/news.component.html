@@ -1,0 +1,46 @@
+<h1>模板里面绑定数据</h1>
+<p>hello news</p>
+<h2>{{title}}</h2>
+
+<p>{{userinfo.name}}</p>
+
+<div>{{msg}}</div>
+
+<h1>模板里面绑定属性</h1>
+<hr/>
+<div title="我是一个div">
+  鼠标描上去看一下.
+</div>
+
+<div [title]="msg">
+   绑定属性
+</div>
+
+<hr/>
+<h1>模板里面绑定html</h1>
+
+
+<div>
+
+</div>
+
+<span [innerHTML]="content" class="red"></span>
+<hr/>
+<p>模板里面允许做简单的运算</p>
+
+1+2={{1+2}}
+
+<hr>
+<p>模板里面循环</p>
+
+<ul>
+  <li *ngFor="let item of cars">
+    {{item.name}}
+
+    <ol>
+      <li *ngFor="let car of item.list">
+        {{car.title}}--{{car.price}}
+      </li>
+    </ol>
+  </li>
+</ul>
