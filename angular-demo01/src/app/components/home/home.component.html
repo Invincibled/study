@@ -1,2 +1,109 @@
-<p>hello home!</p>
-<h2>{{title}}</h2>
+<h1>引入图片</h1>
+
+<img src="assets/images/1.png" alt="">
+
+<img [src]="picUrl" alt="">
+
+<hr>
+
+<h1>循环显示数据索引</h1>
+<ul>
+  <ol *ngFor="let item of list;let key=index">
+    {{key}}----{{item.title}}
+  </ol>
+</ul>
+
+
+<hr>
+
+<h1>条件判断语句</h1>
+
+<div *ngIf="flag">
+  <img src="assets/images/2.png" alt="">
+</div>
+
+<div *ngIf="!flag">
+  <img src="assets/images/1.png" alt="">
+</div>
+
+<hr>
+
+<h1>switch</h1>
+
+<span [ngSwitch]="orderStatus">
+  <p *ngSwitchCase="1">
+     已支付
+  </p>
+   <p *ngSwitchCase="2">
+     支付并且确认订单
+  </p>
+   <p *ngSwitchCase="3">
+     已经发货
+  </p>
+   <p *ngSwitchCase="4">
+     已经收货
+  </p>
+  <p *ngSwitchDefault>
+    无效订单
+  </p>
+</span>
+
+
+<hr>
+
+<h1>属性ngclass</h1>
+
+<div class="red">
+  ngclass演示(尽量不要使用dom操作样式)
+</div>
+
+<div [ngClass]="{'orange':flag, 'red':!flag}">
+  ngclass演示啊
+</div>
+
+<hr>
+
+<h1>属性ngstyle</h1>
+
+<p [ngStyle]="{'color':attr}">你好</p>
+
+<hr>
+<h1>管道符</h1>
+
+<p>{{today| date:'yyyy-MM-dd HH:mm:ss'}}</p>
+
+
+<hr>
+<h1>事件</h1>
+<strong>{{orderStatus}}</strong>
+
+<br/>
+<button (click)="run()">自定义</button>
+<br/>
+<button (click)="getData()">获取数据</button>
+<br/>
+<button (click)="setData()">设置数据</button>
+<br/>
+
+<button (click)="runEvent($event)">事件</button>
+<br/>
+
+
+
+<input type="text" (keydown)="keyDown($event)">
+<br/>
+
+<input type="text" (keyup)="keyUp($event)">
+
+
+<hr>
+<h1>双向数据绑定</h1>
+
+<input type="text" [(ngModel)]="keyword" />
+<br>
+
+{{keyword}}
+<br>
+<button (click)="changeData()">改变数据</button>
+<br>
+<button (click)="changeGetData()">获取数据</button>
