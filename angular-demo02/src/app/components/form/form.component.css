@@ -1,0 +1,44 @@
+h2{
+  text-align: center;
+}
+
+.people_list{
+  width: 400px;
+
+  margin: 40px auto;
+
+  padding: 20px;
+
+  border: 1px solid #eeeeee;
+}
+
+.people_list>ul>li{
+  height: 50px;
+  line-height: 50px;
+}
+
+.username>input{
+  height: 24px;
+  width:300px;
+}
+.sex>input{
+  /*height: 24px;*/
+  width:40px;
+}
+.city>select{
+  width: 70px;
+  height: 24px;
+  font-size: 14px;
+}
+
+.hobby>span{
+  display: inline-block;
+  margin-right: 20px;
+}
+
+/*button{*/
+/*  width: 100px;*/
+/*  float: right;*/
+/*  margin-right: 48px;*/
+/*  margin-top: 10px;*/
+/*}*/

@@ -1,0 +1,20 @@
+.todoList{
+  width: 400px;
+  margin: 20px auto;
+}
+
+.todoList>input{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 32px;
+}
+
+.todoList>button{
+  height: 32px;
+  width: 80px;
+}
+
+li{
+  line-height: 40px;
+}
