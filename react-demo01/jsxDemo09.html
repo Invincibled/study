@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+    // 3.props 是react中的一个重要的属性,是组件对外的接口，我们
+    // props就可以从组件的外部像组件的内部进行数据的传递，也可以完成组件给子组件的数据传递
+    // 注意：无论是无状态组件还是类组件，我们都修改自身的props，因为是单向的.
+
+    class MyComp extends React.Component{
+        render(){
+            return (
+                <div>我是来来来----{this.props.text}-----{this.props.number}</div>
+            )
+        }
+
+    }
+    let obj ={
+        text:"lalla",
+        number: 243
+    }
+    ReactDOM.render(<MyComp {...obj} />,document.getElementById("domReactor"))
+</script>
+</body>
+</html>
