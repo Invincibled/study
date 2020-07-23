@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+
+    /**
+     * 转发refs ,react 当中提供了一个ref的数据 （不能在五状态组件中使用，因为无状态组件没有实例）
+     * 表示当前组真正的实例的医用，他会返回绑定当前属性的元素
+     * 标识组件内部的元素---方便我们查找
+     *
+     * react中给我们提供3中方式
+     * 1. 字符串方式
+     * 2. 回调函数
+     *    就是在dom节点上，或是组件上挂载函数，函数的入参形参，他的效果和字符串的方式是一样的都是获取值的引用.
+     * 3. react.createref(), react16.3新提供的一种方式.
+     *
+     * 官方当中建议我们不要过多使用ref，需要优先考虑state
+     */
+
+    class Comp extends React.Component{
+        constructor(props) {
+            super(props);
+            this.myRef = React.createRef()
+        }
+        fun = ()=>{
+            // console.log(this.refs.demoInput.value)
+            // console.log(this.textinput.value)
+            console.log(this.myRef.current.value)
+        }
+        render(){
+            return (
+                <div>
+                    {/*<input type="text" ref="demoInput"></input>*/}
+                    {/* <input type="text" ref={(input)=>{this.textinput = input}}></input>*/}
+
+                    <input type="text" ref={this.myRef}></input>
+                    <button onClick={this.fun}>点我</button>
+                   <div>我是一个组件</div>
+            </div>)
+        }
+
+    }
+
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>

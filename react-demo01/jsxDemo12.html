@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+    /**
+     * state 状态
+     * state 和props的区别
+     * state 是组件对内的接口, props是组件对外的接口
+     * 组件内部可以引用其他的组件，组件之间的引用形成了树状的接口，如果下层组件需要使用上层组件的数据，上层组件就可以通过下层组件中props来进行数据传递，因为props就是组件中对外的接口.
+     *
+     * 组件除了使用上层传递的数据之外,他自身也可能有需要管理的数据，这个对内层数据属性就是state.
+     *
+     * react中，我们开发者，只需要关系数据，数据改变后，页面会自动重新加载，state页面中对应的数据页面就会自动改变.
+     *          编程式渲染，声明式渲染，只要我们声明好数据，ract自动
+     *
+     *  主要区别：
+     *  state 是可以变的，props是对于当年页面来说，如果我们想要修改props中的数据，那么我们修改传递当前组件数据的父组件的内容
+     *
+     *  如果要使用状态(state)，不能使用无状态组件.
+     */
+    class Comp extends React.Component{
+        /**
+         * es6 的写法,不管子类写不写构造方法，new的时候，都会补上构造方法.
+         * 我们可以不写，如果写了构造方法，则必须要在构造方法使用使用super()就是指向父类的构造方法.
+         * @param propos
+         */
+        constructor(props) {
+            // 如果想在构造方法使用props，那么super中必须写上props
+            super(props);
+            this.state = {
+                // 相关组件内部数据.
+                name :"歇息"
+            }
+        }
+        render(){
+            return (
+                <div>
+                <button onClick={()=>{this.setState({name:"哈哈"})}}>点击</button>
+                <div>我是一个组件--{this.state.name}</div>
+                </div>
+            )
+        }
+    }
+
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>

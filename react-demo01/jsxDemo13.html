@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+
+    class Comp extends React.Component{
+
+        constructor(props) {
+            // 如果想在构造方法使用props，那么super中必须写上props
+            super(props);
+            this.state = {
+                // 相关组件内部数据.
+                name :"歇息",
+                newHtml:"<p>我是一个p标签</p>"
+            }
+        }
+        render(){
+            return (
+                <div>
+                    <button onClick={()=>{this.setState({name:"哈哈"})}}>点击</button>
+                    <div>我是一个组件--{this.state.name}</div>
+                    <div dangerouslySetInnerHTML={{__html:this.state.newHtml}}></div>
+                    <div>{this.state.newHtml}</div>
+                </div>
+            )
+        }
+    }
+
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>

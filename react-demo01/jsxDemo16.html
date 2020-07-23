@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+
+    /**
+     * 条件渲染，是什么？
+     *  根据状态变化只渲染其中的一部分.
+     *  if ,jsx中不允许出现if
+     */
+
+    class Comp extends React.Component{
+        constructor(props) {
+            super(props);
+            this.state={
+                status:true
+            }
+
+        }
+
+       fun(){
+            this.setState({
+                status: !this.state.status
+            })
+
+       }
+        render(){
+            let text ;
+            if (this.state.status){
+                text = "你好"
+            }
+            else {
+                text = "你坏"
+            }
+            return (
+                <div>
+                    <div>我是一个组件</div>
+                    <button onClick={this.fun.bind(this)}>点我</button>
+                    <div>{text}</div>
+                    <div>{this.state.status?"lll":"fafd"}</div>
+                </div>)
+        }
+
+    }
+
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>

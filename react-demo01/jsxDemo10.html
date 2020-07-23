@@ -20,7 +20,7 @@
    //props验证 -- 验证传递的值是否符合我们的期望或中要求，上线模式中请取消props验证，
    function MyComp(props){
        return (
-           <div>我是一个无状态组件----{props.name}----{props.number}</div>
+           <div>我是一个无状态组件----{props.name}----{props.number}-----{props.age}</div>
        )
    }
    MyComp.defaultProps = {
@@ -35,9 +35,11 @@
     // }
 
    MyComp.propTypes={
-       name: PropTypes.number
+       name: PropTypes.number,
+       age: PropTypes.number.isRequired
    }
-    ReactDOM.render(<MyComp />,document.getElementById("domReactor"))
+   let age = 28
+    ReactDOM.render(<MyComp age={age}/>,document.getElementById("domReactor"))
 </script>
 </body>
 </html>

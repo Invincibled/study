@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+    let bool = false
+    let MyComp=(props)=>{
+        return (
+            <div style={{"display": bool?'block':'none'}}>{props.arr.map((v, i)=>{
+                    return (<p key={i}>{i}---{v} </p>)
+               }
+            )}</div>
+        )
+    }
+    let dataArr = ['葛优','暑期','jon']
+    let Comp=()=>{
+        return(
+            <div>
+             <div onClick={()=>{bool=!bool;render()}}>LOL展示</div>
+             <MyComp arr={dataArr}/>
+            </div>
+        )
+    }
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>
