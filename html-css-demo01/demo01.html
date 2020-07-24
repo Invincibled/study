@@ -5,22 +5,51 @@
     <meta name="viewport"
           content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
     <title>Title</title>
-
+    <link rel="stylesheet" href="css/de">
     <style>
-        h1[title]{
-            background-color: red;
+       p{
+           line-height: 1.5em;
+           white-space: pre;
+       }
+
+        div{
+            width: 300px;
+            height: 400px;
+            border: 1px solid red;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
-        :root{
-
+        article{
+            width: 200px;
+            height: 200px;
+            outline: 50px solid red;
         }
-
-        :empty{
-
-        }
-
     </style>
 </head>
 <body>
-<h1 title="fff" id="fadfd">发大幅度</h1>
+
+<article>
+ 呵呵呵
+
+</article>
+<p>
+    使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，
+    只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，
+    今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。
+
+    这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？
+    又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。
+</p>
+
+<div>
+    使用CSS也好久了，但一直都是在使用“px”来设置Web元素的相关属性，未敢使用“em”。主要原因是，对其并不什么了解，
+    只知道一点概念性的东西，前段时间在项目中要求使用“em”作为单位设置元素，所以从头对“em”学习了一回。稍为有一点理解，
+    今天特意整理了一份博文与大家一起分享，希望对童子们有些许的帮助。
+
+    这篇教程将引导大家如何使用“em”来创建一个基本的弹性布局，从而学习其如何计算？又是如何使用“em”对层进行弹性扩展？
+    又是如何扩展文本和图像等内容？下在我们就一起带着这些问题开始今天的“em”之行。
+
+</div>
 </body>
 </html>
