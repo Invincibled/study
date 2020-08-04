@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0">
+    <title>Title</title>
+    <script src="node_modules/react/umd/react.development.js"></script>
+    <script src="node_modules/react-dom/umd/react-dom.development.js"></script>
+    <script src="node_modules/babel-standalone/babel.min.js"></script>
+    <script src="node_modules/prop-types/prop-types.js"></script>
+</head>
+<body>
+<div id="domReactor">
+
+</div>
+
+<script type="text/babel">
+
+    /**
+     * 状态提升，多个组件需要反映相同变化的数据，提升到他们最近的一个父组件中，
+     * 多个字组件需要利用到对方状态情况下，那么这个时候就需要使用到状态提升.
+     */
+
+    class Compa extends React.Component{
+        constructor(props) {
+            super(props);
+        }
+        render(){
+            return(<div>
+                我是第一个组件----{this.props.text}
+            </div>)
+        }
+    }
+
+    class Compb extends React.Component{
+        constructor(props) {
+            super(props);
+        }
+        render(){
+            return(<div>
+                我是第二个组件---{this.props.text}
+            </div>)
+        }
+    }
+    class Comp extends React.Component{
+        constructor(props) {
+            super(props);
+            this.state={
+                context:"我是共同使用的"
+            }
+        }
+        fun = ()=>{
+            this.setState({
+                context: "啦啦啦"
+            })
+        }
+        render(){
+            return(<div>
+                <Compa text={this.state.context} />
+                <Compb text={this.state.context} />
+                <button onClick={this.fun}>点我</button>
+            </div>)
+        }
+    }
+    function render(){
+        ReactDOM.render(<Comp/>,document.getElementById("domReactor"))
+    }
+    render()
+</script>
+</body>
+</html>
