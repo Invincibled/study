@@ -1,11 +1,11 @@
-<div class="search">
 
+<div class="search">
+  <h2 style="text-align: center">京东搜索</h2>
   <input type="text" [(ngModel)]="keyword"> <button (click)="doSearch()">搜索</button>
   <hr>
   <ul>
 
     <li *ngFor="let item of list">{{item}}----<button (click)="delSearch(item)">删除</button></li>
   </ul>
-
 
 </div>

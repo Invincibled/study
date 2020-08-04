@@ -15,17 +15,22 @@ export class TodolistComponent implements OnInit {
 
   public todolist:any[] = []
 
-  constructor(storage: StorageService) {
+  constructor(public storage: StorageService) {
 
   }
 
   ngOnInit(): void {
+    let local = this.storage.get("todoList")
+    if (local) {
+      this.todolist = local
+    }
   }
 
   doAdd(e){
     if(e.keyCode === 13){
       if(!this.todolistHasKeyword(this.todolist, this.keyword)){
         this.todolist.push({title:this.keyword, status:0})
+        this.storage.setL("todoList", this.todolist)
         this.keyword = ""
       }
       else {
@@ -36,7 +41,9 @@ export class TodolistComponent implements OnInit {
   }
 
   delSearch(index){
+
     this.todolist.splice(index,1)
+    this.storage.setL("todoList", this.todolist)
   }
 
   todolistHasKeyword(todolist:any, keyword:any):boolean{
@@ -56,5 +63,8 @@ export class TodolistComponent implements OnInit {
        }
     }
     return false;
+  }
+  changeBox(){
+    this.storage.setL("todoList", this.todolist)
   }
 }

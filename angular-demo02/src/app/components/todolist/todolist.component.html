@@ -1,17 +1,19 @@
 <div class="todoList">
-
+  <h2 style="text-align: center">ToList</h2>
   <input type="text" [(ngModel)]="keyword" (keyup)="doAdd($event)">
   <hr>
 
   <h3>待办事项</h3>
   <ul>
-    <li *ngFor="let item of todolist;let index=key" [hidden]="item.status==1"><input type="checkbox" [(ngModel)]="item.status" />{{item.title}}----<button (click)="delSearch(index)">删除</button></li>
+    <li *ngFor="let item of todolist;let index=key" [hidden]="item.status==1">
+      <input type="checkbox" [(ngModel)]="item.status" (change)="changeBox()"/>{{item.title}}----<button (click)="delSearch(index)">删除</button>
+    </li>
   </ul>
 
   <h3>已完成事项</h3>
 
   <ul>
-    <li *ngFor="let item of todolist;let index=key" [hidden]="item.status==0"><input type="checkbox" [(ngModel)]="item.status" />{{item.title}}----<button (click)="delSearch(index)">删除</button></li>
+    <li *ngFor="let item of todolist;let index=key" [hidden]="item.status==0"><input type="checkbox" [(ngModel)]="item.status" (change)="changeBox()" />{{item.title}}----<button (click)="delSearch(index)">删除</button></li>
   </ul>
 
 </div>
