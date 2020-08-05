@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   public title:string="我是home的title"
+  msg:string = "我是一条信息"
   constructor() { }
 
   ngOnInit(): void {
   }
 
+
+  run(){
+    console.log("父组件方法")
+  }
 }
