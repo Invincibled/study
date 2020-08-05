@@ -1,0 +1,8 @@
+<h2>新闻数据</h2>
+
+<ul>
+  <li  *ngFor="let item of newsList;let key=index;" >
+    <a routerLink="/newscontent" [queryParams]="{aid:key}">{{item}}</a>
+
+  </li>
+</ul>

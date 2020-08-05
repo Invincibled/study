@@ -1,1 +1,13 @@
-<p>news works!</p>
+<app-footer #footer (outer)="runParent($event)"></app-footer>
+<hr>
+
+<br>
+
+
+<div>
+  我是news组件
+</div>
+
+<button (click)="getChildMsg()">获取子组件消息</button>
+
+<button (click)="getChildRun()">执行子组件run方法</button>
