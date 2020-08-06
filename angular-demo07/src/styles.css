@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+
+}
+.left{
+  height: 630px;
+  width: 200px;
+  border-right: 1px solid gray;
+}
+
+.right{
+  flex: 1;
+}
+
+
+.active{
+  color:red !important;
+}
