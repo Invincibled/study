@@ -1,8 +1,19 @@
 <h2>新闻数据</h2>
 
+
+<p>get传值</p>
 <ul>
   <li  *ngFor="let item of newsList;let key=index;" >
     <a routerLink="/newscontent" [queryParams]="{aid:key}">{{item}}</a>
+
+  </li>
+</ul>
+
+<p>动态路由传值</p>
+
+<ul>
+  <li  *ngFor="let item of newsList;let key=index;" >
+    <a [routerLink]="['/newscontent', key]">{{item}}</a>
 
   </li>
 </ul>
