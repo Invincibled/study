@@ -1,0 +1,11 @@
+header{
+  background-color: black;
+  height: 40px;
+  line-height: 40px;
+
+}
+header>a{
+  padding: 10px 40px;
+  color: white;
+  font-family: "Microsoft YaHei";
+}
