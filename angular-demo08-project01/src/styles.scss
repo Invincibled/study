@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+@charset "UTF-8";
+
+body,div,ul,li,ol,h1,h2,h3,h4,h5,h6,input,textarea,select,p,dl,dt,dd,a,img,button,form,table{
+  padding: 0;
+  margin: 0;
+}
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font: 12px/1.5 'Microsoft YaHei','宋体',Tahoma, Arial, sans-serif;
+  color: #555;
+  background-color: #F7F7F7;
+}
+
+em,i{
+  font-style: normal;
+}
+strong{
+  font-weight: normal;
+}
+
+.clearfix:after{
+  content: "";
+  display: none;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
