@@ -1,11 +1,10 @@
 import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
-
-import { ListComponent } from "./list.component";
+import { SlideComponent } from "./slide.component";
 
 @NgModule({
   declarations: [],
-  exports: [ListComponent],
   imports: [CommonModule],
+  exports: [SlideComponent],
 })
-export class ListModule {}
+export class SlideModule {}
