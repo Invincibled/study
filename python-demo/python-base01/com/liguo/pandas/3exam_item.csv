@@ -1,0 +1,82 @@
+id,sequence,name_medical,name_en,name_cn,value_type,display_value,reference_value,unit,create_time,update_time,detect_limit,category
+427248468839405197,Cell0001,CD34+CD45dim,CD34+ cells %,CD34+干细胞百分比,RANGE,0.03-0.7,{"lowerLimit":0.03,"upperLimit":0.7},%,30/7/2019 16:07:44,18/12/2019 14:13:30,,干细胞
+427248468839470733,Cell0002,CD45+SSC(low),Lymphocyte %,淋巴细胞百分比,RANGE,20-40,{"lowerLimit":20,"upperLimit":40},%,30/7/2019 16:07:44,20/12/2019 12:46:01,,白细胞
+427248468839536269,Cell0003,CD45+SSC(mid),Monocyte %,单核细胞百分比,RANGE,3-8,{"lowerLimit":3,"upperLimit":8},%,30/7/2019 16:07:44,20/12/2019 12:46:49,,白细胞
+427248468839601805,Cell0004,CD45+SSC(high),Granulocyte %,粒细胞百分比,RANGE,50-70,{"lowerLimit":50,"upperLimit":70},%,30/7/2019 16:07:44,20/12/2019 12:48:05,,白细胞
+427248468839667341,Cell0005,CD34+CD45dim,CD34+ cells count,CD34+干细胞计数,RANGE,0.32-3.5,{"lowerLimit":0.32,"upperLimit":3.5},个/μl,30/7/2019 16:07:44,20/12/2019 12:48:38,,干细胞
+427248468839732877,Cell0006,CD45+SSC(low),Lymphocyte count,淋巴细胞计数,RANGE,1488-4483,{"lowerLimit":1488,"upperLimit":4483},个/μl,30/7/2019 16:07:44,18/12/2019 14:14:11,,白细胞
+427248468839798413,Cell0007,CD45+SSC(mid),Monocyte count,单核细胞计数,RANGE,300-800,{"lowerLimit":300,"upperLimit":800},个/μl,30/7/2019 16:07:44,18/12/2019 14:14:22,,白细胞
+427248468839863949,Cell0008,CD3+CD19-,T lymphocytes %,总T淋巴细胞百分比,RANGE,50-84,{"lowerLimit":50,"upperLimit":84},%,30/7/2019 16:07:44,18/12/2019 14:14:32,,淋巴细胞亚群
+427248468839929485,Cell0009,CD3-CD19+,B lymphocytes %,总B淋巴细胞百分比,RANGE,5-18,{"lowerLimit":5,"upperLimit":18},%,30/7/2019 16:07:44,18/12/2019 14:14:40,,淋巴细胞亚群
+427248468839995021,Cell0010,CD3+TCRγδ+,γδT lymphocytes %,γδT细胞百分比,RANGE,1-10,{"lowerLimit":1,"upperLimit":10},%,30/7/2019 16:07:44,10/1/2020 10:50:48,,淋巴细胞亚群
+427248468840060557,Cell0011,CD3-CD56+CD16+,NK lymphocytes %,NK细胞百分比,RANGE,7-40,{"lowerLimit":7,"upperLimit":40},%,30/7/2019 16:07:44,18/12/2019 14:15:00,,淋巴细胞亚群
+427248468840126093,Cell0012,CD3+CD56+CD16+,NKT lymphocytes %,NK-T细胞百分比,RANGE,3-8,{"lowerLimit":3,"upperLimit":8},%,30/7/2019 16:07:44,18/12/2019 14:15:08,,淋巴细胞亚群
+427248468840191629,Cell0013,CD3+CD19-,T lymphocytes count,总T淋巴细胞计数,RANGE,955-2860,{"lowerLimit":955,"upperLimit":2860},个/μl,30/7/2019 16:07:44,18/12/2019 14:15:18,,淋巴细胞亚群
+427248468840257165,Cell0014,CD3-CD19+,B lymphocytes count,总B淋巴细胞计数,RANGE,90-560,{"lowerLimit":90,"upperLimit":560},个/μl,30/7/2019 16:07:44,18/12/2019 14:15:30,,淋巴细胞亚群
+427248468840322701,Cell0015,CD3-CD56+CD16+,NK lymphocytes count,NK细胞计数,RANGE,150-1100,{"lowerLimit":150,"upperLimit":1100},个/μl,30/7/2019 16:07:44,18/12/2019 14:15:37,,淋巴细胞亚群
+427248468840388237,Cell0016,CD3+CD4+CD8-,Helper T cell %,辅助T细胞百分比,RANGE,27-51,{"lowerLimit":27,"upperLimit":51},%,30/7/2019 16:07:44,18/12/2019 14:15:46,,T淋巴细胞亚群
+427248468840453773,Cell0017,CD3+CD4-CD8+,Killer/cytotoxic T cell %,抑制/细胞毒T细胞百分比,RANGE,15-44,{"lowerLimit":15,"upperLimit":44},%,30/7/2019 16:07:44,18/12/2019 14:15:54,,T淋巴细胞亚群
+427248468840519309,Cell0018,CD4+/CD8+,Helper/Killer T cell ratio,Th/Tc,RANGE,0.71-2.78,{"lowerLimit":0.71,"upperLimit":2.78},,30/7/2019 16:07:44,7/4/2020 15:32:33,,T淋巴细胞亚群
+427248468840584845,Cell0019,CD3+CD4+CD8-,Helper T cell count,辅助T细胞计数,RANGE,414-1123,{"lowerLimit":414,"upperLimit":1123},个/μl,30/7/2019 16:07:44,8/4/2020 11:39:15,,T淋巴细胞亚群
+427248468840650381,Cell0020,CD3+CD4-CD8+,Killer/cytotoxic T cell count,杀伤/细胞毒T细胞计数,RANGE,238-874,{"lowerLimit":238,"upperLimit":874},个/μl,30/7/2019 16:07:44,8/4/2020 11:40:07,,T淋巴细胞亚群
+427248468840715917,Cell0021,CD4+CD25(high)CD127(dim),Regulatory T cell %,调节性CD4+T细胞百分比,RANGE,2-10,{"lowerLimit":2,"upperLimit":10},%,30/7/2019 16:07:44,18/12/2019 14:16:46,,调节性CD4+T细胞
+427248468840781453,Cell0022,CD3+CD4+CD45RA+,Naive CD4+ T cell %,CD4+初始T细胞百分比,RANGE,10-20,{"lowerLimit":10,"upperLimit":20},%,30/7/2019 16:07:44,18/12/2019 14:16:56,,T细胞分化表型
+427248468840846989,Cell0023,CD3+CD4+CD45RO+,CD4+ Effector Memory T cell %,CD4+效应和记忆T细胞百分比,RANGE,8-25,{"lowerLimit":8,"upperLimit":25},%,30/7/2019 16:07:44,18/12/2019 14:17:05,,T细胞分化表型
+427248468840912525,Cell0024,CD3+CD8+CD45RA+,Naive CD8+ T cell %,CD8+初始T细胞百分比,RANGE,10-20,{"lowerLimit":10,"upperLimit":20},%,30/7/2019 16:07:45,18/12/2019 14:17:15,,T细胞分化表型
+427248468840978061,Cell0025,CD3+CD8+CD45RO+,CD8+ Effector Memory T cell %,CD8+效应和记忆T细胞百分比,RANGE,2-15,{"lowerLimit":2,"upperLimit":15},%,30/7/2019 16:07:45,18/12/2019 14:17:22,,T细胞分化表型
+427248468841043597,Cell0026,CD3+CD4+CD45RA+,Naive CD4+ T cell count,CD4+初始T细胞计数,RANGE,154-485,{"lowerLimit":154,"upperLimit":485},个/μl,30/7/2019 16:07:45,18/12/2019 14:17:33,,T细胞分化表型
+427248468841109133,Cell0027,CD3+CD4+CD45RO+,CD4+ Effector Memory T count,CD4+效应和记忆T细胞计数,RANGE,298-683,{"lowerLimit":298,"upperLimit":683},个/μl,30/7/2019 16:07:45,18/12/2019 14:17:43,,T细胞分化表型
+427248468841174669,Cell0028,CD3+CD8+CD45RA+,Naive CD8+ T cell count,CD8+初始T细胞计数,RANGE,152-395,{"lowerLimit":152,"upperLimit":395},个/μl,30/7/2019 16:07:45,18/12/2019 14:17:51,,T细胞分化表型
+427248468841240205,Cell0029,CD3+CD8+CD45RO+,CD8+ Effector Memory T count,CD8+效应和记忆T细胞计数,RANGE,85-261,{"lowerLimit":85,"upperLimit":261},个/μl,30/7/2019 16:07:45,18/12/2019 14:17:59,,T细胞分化表型
+427248468841305741,Cell0030,Lin1-CD11c+HLA-DR+,Myeloid DC %,浆样树突状细胞(pDC)百分比,RANGE,0.1-0.5,{"lowerLimit":0.1,"upperLimit":0.5},%,30/7/2019 16:07:45,18/12/2019 14:18:07,,树突状（DC）细胞
+427248468841371277,Cell0031,Lin-CD123+HLA-DR+,Lymphoid DC %,髓样树突状细胞(mDC)百分比,RANGE,0.05-0.3,{"lowerLimit":0.05,"upperLimit":0.3},%,30/7/2019 16:07:45,18/12/2019 14:18:16,,树突状（DC）细胞
+427248468841436813,Cell0032,CD3-CD19+,B lymphocytes %,总B细胞百分比,RANGE,5-18,{"lowerLimit":"5","upperLimit":"18"},%,30/7/2019 16:07:45,18/12/2019 14:18:24,,
+427248468841502349,Cell0033,CD3+TCRγδ+,YδT lymphocytes %,Gamma T细胞百分比,RANGE,1-10,{"lowerLimit":"1","upperLimit":"10"},%,30/7/2019 16:07:45,18/12/2019 14:18:32,,
+427248468841567885,Cell0034,CD3+CD4+CD45RA+,Naive CD4+ T cell %,CD4初始T细胞百分比,RANGE,10-20,{"lowerLimit":"10","upperLimit":"20"},%,30/7/2019 16:07:45,18/12/2019 14:18:44,,
+427248468841633421,Cell0035,CD3+CD4+CD45RO+,CD4+ Effector Memory T cell %,CD4效应记忆细胞百分比,RANGE,8-25,{"lowerLimit":"8","upperLimit":"25"},%,30/7/2019 16:07:45,18/12/2019 14:18:52,,
+427248468841698957,Cell0036,CD3+CD8+CD45RA+,Naive CD8+ T cell %,CD8初始T细胞百分比,RANGE,10-20,{"lowerLimit":"10","upperLimit":"20"},%,30/7/2019 16:07:45,18/12/2019 14:18:59,,
+427248477429339789,Cell0037,CD3+CD8+CD45RO+,CD8+ Effector Memory T cell %,CD8效应记忆细胞百分比,RANGE,2-15,{"lowerLimit":"2","upperLimit":"15"},%,30/7/2019 16:07:45,18/12/2019 14:19:10,,
+427248477429405325,Cell0038,CD3+CD4+CD45RA+,Naive CD4+ T cell count,CD4初始T细胞计数,RANGE,154-485,{"lowerLimit":"154","upperLimit":"485"},个/μl,30/7/2019 16:07:45,18/12/2019 14:19:18,,
+427248477429470861,Cell0039,CD3+CD4+CD45RO+,CD4+ Effector Memory T count,CD4效应记忆细胞计数,RANGE,298-683,{"lowerLimit":"298","upperLimit":"683"},个/μl,30/7/2019 16:07:45,18/12/2019 14:19:28,,
+427248477429536397,Cell0040,CD3+CD8+CD45RA+,Naive CD8+ T cell count,CD8初始T细胞计数,RANGE,152-395,{"lowerLimit":"152","upperLimit":"395"},个/μl,30/7/2019 16:07:45,18/12/2019 14:19:36,,
+427248477429601933,Cell0041,CD3+CD8+CD45RO+,CD8+ Effector Memory T count,CD8效应记忆细胞计数,RANGE,85-261,{"lowerLimit":"85","upperLimit":"261"},个/μl,30/7/2019 16:07:45,18/12/2019 14:19:47,,
+427248477429667469,Cell0042,CD3-CD19+,B lymphocytes count,总B细胞计数,RANGE,90-560,{"lowerLimit":"90","upperLimit":"560"},个/μl,30/7/2019 16:07:45,18/12/2019 14:19:54,,
+433259163901007567,HM0001,AMH,,抗缪勒氏管激素 AMH,AGESTAGE,18-24岁：1.42-7.93
+25-29岁：0.96-6.21
+30-34岁：0.66-5.32
+35-39岁：0.39-4.40
+40-44岁：0.10-2.96
+45-50岁：0-1.08
+≥51岁：0-0.65,[{"key":{"lowerLimit":"18","upperLimit":"24"},"value":{"lowerLimit":"1.42","upperLimit":"7.93"}},{"key":{"lowerLimit":"25","upperLimit":"29"},"value":{"lowerLimit":"0.96","upperLimit":"6.21"}},{"key":{"lowerLimit":"30","upperLimit":"34"},"value":{"lowerLimit":"0.66","upperLimit":"5.32"}},{"key":{"lowerLimit":"35","upperLimit":"39"},"value":{"lowerLimit":"0.39","upperLimit":"4.40"}},{"key":{"lowerLimit":"40","upperLimit":"44"},"value":{"lowerLimit":"0.10","upperLimit":"2.96"}},{"key":{"lowerLimit":"45","upperLimit":"50"},"value":{"lowerLimit":"0","upperLimit":"1.08"}},{"key":{"lowerLimit":"51","upperLimit":"200"},"value":{"lowerLimit":"0","upperLimit":"0.65"}}],ng/mL,2/9/2019 11:54:41,18/12/2019 14:20:05,<0.01,
+433259163901138639,HM0003,LH,,促黄体生成素 LH,PERIOD,卵泡期：2.4-12.6
+排卵期：14.0-95.6
+黄体期：1.0-14.4
+绝经后：7.7-68.8,[{"key":"卵泡期","value":{"lowerLimit":"2.4","upperLimit":"12.6"}},{"key":"排卵期","value":{"lowerLimit":"14.0","upperLimit":"95.6"}},{"key":"黄体期","value":{"lowerLimit":"1.0","upperLimit":"14.4"}}],IU/L,2/9/2019 11:54:41,18/12/2019 14:21:19,<0.03,
+433259163901204175,HM0002,FSH,,卵泡刺激素 FSH,PERIOD,卵泡期：1.5-12.5
+排卵期：6.1-36.5
+黄体期：1.7-11.7
+绝经后：8.8-118.0,[{"key":"卵泡期","value":{"lowerLimit":"1.5","upperLimit":"12.5"}},{"key":"排卵期","value":{"lowerLimit":"6.1","upperLimit":"36.5"}},{"key":"黄体期","value":{"lowerLimit":"1.7","upperLimit":"11.7"}}],IU/L,2/9/2019 11:54:41,18/12/2019 14:21:09,<0.08,
+433259163901466319,Gene0001,TGFBR3,,TGFBR3,SINGLE,AA,TT,CC,AA,TT,CC,,2/9/2019 11:54:41,18/12/2019 14:21:29,,1号染色体
+433259163901531855,Gene0003,BMP15,,BMP15,SINGLE,TT,TT,,2/9/2019 11:54:41,18/12/2019 14:21:39,,X染色体
+433259163901597391,Gene0002,GDF9,,GDF9,SINGLE,CC,CC,CC,CC,,2/9/2019 11:54:41,18/12/2019 14:21:51,,5号染色体
+531863272190678772,Cell0043,CD3+CD69+,,早期活化T细胞百分比,RANGE,0.1-3.5,{"lowerLimit":0.1,"upperLimit":3.5},%,18/12/2019 15:10:35,18/12/2019 15:10:35,,T细胞活化状态
+531863272190744308,Cell0044,CD3+CD25+,,中期活化T细胞百分比,RANGE,10-30,{"lowerLimit":10,"upperLimit":30},%,18/12/2019 15:10:35,18/12/2019 15:10:35,,T细胞活化状态
+531863272190809844,Cell0045,CD3+HLA-DR+,,晚期活化T细胞百分比,RANGE,15-25,{"lowerLimit":15,"upperLimit":25},%,18/12/2019 15:10:35,18/12/2019 15:10:35,,T细胞活化状态
+531863272190875380,Cell0046,CD3+CD4+CCR7+CD45RA-,,CD4+中央记忆T细胞计数,RANGE,70-671,{"lowerLimit":70,"upperLimit":671},个/μl,18/12/2019 15:10:35,25/12/2019 14:09:23,,
+531863272190940916,Cell0047,CD3+CD4+CCR7+CD45RA-,,CD4+中央记忆T细胞百分比,RANGE,15-64.3,{"lowerLimit":15,"upperLimit":64.3},%,18/12/2019 15:10:35,25/12/2019 14:09:32,,
+531863272191006452,Cell0048,CD3+CD8+CCR7+CD45RA-,,CD8+中央记忆T细胞计数,RANGE,7-206,{"lowerLimit":7,"upperLimit":206},个/μl,18/12/2019 15:10:35,25/12/2019 14:09:42,,
+531863272191071988,Cell0049,CD3+CD8+CCR7+CD45RA-,,CD8+中央记忆T细胞百分比,RANGE,2.7-36.2,{"lowerLimit":2.7,"upperLimit":36.2},%,18/12/2019 15:10:35,10/4/2020 11:31:56,,
+531863272191137524,Cell0050,CD3+CD4+,,辅助/诱导T淋巴细胞计数,RANGE,199 ~ 1414,{"lowerLimit":199,"upperLimit":1414},个/μl,18/12/2019 15:10:35,25/12/2019 14:10:11,,
+531863272191203060,Cell0051,CD3+CD4+,,辅助/诱导T淋巴细胞百分比,RANGE,46.2 ~ 78,{"lowerLimit":46.2,"upperLimit":78},%,18/12/2019 15:10:35,25/12/2019 14:11:30,,
+531863272191268596,Cell0052,CD3+CD8+,,抑制/细胞毒T淋巴细胞计数,RANGE,61 ~ 1118,{"lowerLimit":61,"upperLimit":1118},个/μl,18/12/2019 15:10:35,25/12/2019 14:11:39,,
+531863272191334132,Cell0053,CD3+CD8+,,抑制/细胞毒T淋巴细胞百分比,RANGE,14.8 ~ 48.4,{"lowerLimit":14.8,"upperLimit":48.4},%,18/12/2019 15:10:35,25/12/2019 14:11:49,,
+531863272191399668,Cell0054,Lin-HLA-DR+,,树突状细胞(DC)计数,RANGE,20-121,{"lowerLimit":20,"upperLimit":121},个/μl,18/12/2019 15:10:35,25/12/2019 14:12:01,,树突状（DC）细胞
+531863272191465204,Cell0055,Lin-HLA-DR+,,树突状细胞(DC)百分比,RANGE,0.2-1.9,{"lowerLimit":0.2,"upperLimit":1.9},%,18/12/2019 15:10:35,25/12/2019 14:12:09,,树突状（DC）细胞
+531863272191530740,Cell0056,Lin1-CD11c+HLA-DR+,Myeloid DC count,浆样树突状细胞(pDC)计数,RANGE,1-21,{"lowerLimit":1,"upperLimit":21},%,18/12/2019 15:10:35,18/12/2019 15:10:35,,树突状（DC）细胞
+531863272191596276,Cell0057,Lin-CD123+HLA-DR+,Lymphoid DC count,髓样树突状细胞(mDC)计数,RANGE,10-107,{"lowerLimit":10,"upperLimit":107},%,18/12/2019 15:10:35,18/12/2019 15:10:35,,树突状（DC）细胞
+531863272191661812,Cell0058,TCR-γδ CD3+,,TCR-γδ T淋巴细胞计数,RANGE,5-334,{"lowerLimit":5,"upperLimit":334},个/μl,18/12/2019 15:10:35,18/12/2019 15:10:35,,
+531863272191727348,Cell0059,TCR-γδ CD3+CD8+,,TCR-γδ CD8+T淋巴细胞计数,RANGE,0-50,{"lowerLimit":0,"upperLimit":50},个/μl,18/12/2019 15:10:36,18/12/2019 15:10:36,,
+531863272191792884,Cell0060,CD3+CD4+:CD3+CD8+,,Th/Ts 比值,RANGE,0.9 ~ 3.6,{"lowerLimit":0.9,"upperLimit":3.6},,18/12/2019 15:10:36,18/12/2019 15:10:36,,
+1247358310944927746,Cell0062,CD45+,,白细胞计数,RANGE,4000-10000,{"lowerLimit":4000,"upperLimit":10000},个/ul,7/4/2020 10:58:32,7/4/2020 10:58:32,,白细胞
+1247358311670542337,Cell0061,CD45+SSC(high),Granulocyte count,粒细胞计数,RANGE,1526-7306,{"lowerLimit":1526,"upperLimit":7306},个/ul,7/4/2020 10:58:32,7/4/2020 10:58:32,,白细胞
+1247358311813148674,Cell0063,CD4+CD25++CD127dim,Regulatory T cell count,调节性CD4+T细胞计数,RANGE,28-142,{"lowerLimit":28,"upperLimit":142},个/ul,7/4/2020 10:58:32,7/4/2020 10:58:32,,调节性CD4+T细胞

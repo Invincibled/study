@@ -1,0 +1,13 @@
+__pycache__
+.idea
+logs
+build
+venv
+.DS_Store
+
+tmp
+**/.ipynb_checkpoints
+
+uwsgi.pid
+uwsgi.log
+uwsgi.log.*
