@@ -34,5 +34,35 @@ fn main() {
 
     // 数组.
 
-    
+    println!("{}", usize::max_value());
+
+    let arr : [u32; 5] = [0,0,1,1,1];
+
+    println!("{}", arr[3]);
+
+    show(arr);
+
+    println!("-----------------");
+
+    let tup: (u32, f32, char) = (2, 34.33, '号');
+
+    println!("{}",tup.0);
+
+    other_println();
+    other_println1(333);
+}
+fn other_println(){
+    println!("没有人合法");
+}
+fn other_println1(u1:u32){
+    println!("{}", u1);
+}
+fn show(arr:[u32;5]){
+
+    println!("--------------");
+
+    for i in &arr{
+        println!("{}", i);
+    }
+    println!("------------------")
 }
