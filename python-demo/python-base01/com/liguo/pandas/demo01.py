@@ -12,8 +12,9 @@ pd.set_option('display.max_columns', None)
 ##########
 
 test2 = pd.read_hdf("4T条各种条件的数据.h5")
-
 print(test2)
+print(test2.shape[0])
+print(len(test2))
 # print(test2)
 # column2 = test2.columns.str.strip('a')
 #
@@ -21,7 +22,7 @@ print(test2)
 # print(column2)
 # print(test2)
 
-print(test2.loc[:,'姓名'].value_counts().size)
+# print(test2.loc[:,'姓名'].value_counts().size)
 ############
 # test3 = pd.read_hdf("晓丹数据.h5")
 # # print(test3)
