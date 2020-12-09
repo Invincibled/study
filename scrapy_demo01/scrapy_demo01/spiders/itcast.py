@@ -1,6 +1,6 @@
 import scrapy
 import logging
-
+from copy import  deepcopy
 logger = logging.getLogger(__name__)
 
 
