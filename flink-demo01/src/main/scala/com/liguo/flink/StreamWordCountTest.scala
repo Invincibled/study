@@ -7,7 +7,7 @@ import org.apache.flink.streaming.api.scala._
   * @date 12/4/20 3:45 PM
   * @description
   */
-object StreamWordCount {
+object StreamWordCountTest {
   def main(args: Array[String]): Unit = {
     val env = StreamExecutionEnvironment.getExecutionEnvironment
 

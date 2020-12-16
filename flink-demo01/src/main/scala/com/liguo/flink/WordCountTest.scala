@@ -7,7 +7,7 @@ import org.apache.flink.api.scala._
   * @date 12/4/20 3:24 PM
   * @description
   */
-object WordCount {
+object WordCountTest {
 
   def main(args: Array[String]): Unit = {
       // 创建可执行的虚拟环境.
@@ -16,7 +16,11 @@ object WordCount {
 
       val inputData = env.readTextFile(filePath)
 
-      val result = inputData.flatMap(_.split(" ")).map((_,1)).groupBy(0).sum(1)
+      val result = inputData
+                   .flatMap(_.split(" "))
+                   .map((_,1))
+                   .groupBy(0)
+                   .sum(1)
 
       result.print()
   }
