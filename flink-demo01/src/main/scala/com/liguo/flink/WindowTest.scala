@@ -1,6 +1,7 @@
 package com.liguo.flink
 
 
+import org.apache.flink.streaming.api.functions.timestamps.BoundedOutOfOrdernessTimestampExtractor
 import org.apache.flink.streaming.api.scala._
 import org.apache.flink.streaming.api.windowing.time.Time
 
@@ -22,6 +23,10 @@ object WindowTest {
         SensorReading(arr(0), arr(1).toLong, arr(2).toDouble)
       }
     )
+      //.assignAscendingTimestamps(_.timestamp) 升序数据提取时间戳.
+        .assignTimestampsAndWatermarks(new BoundedOutOfOrdernessTimestampExtractor[SensorReading](Time.seconds(3)) {
+      override def extractTimestamp(element: SensorReading): Long = element.timestamp
+    })
 
     dataStream.map(
       data=>(data.id, data.temperature)
