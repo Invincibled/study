@@ -10,4 +10,13 @@ from itemadapter import ItemAdapter
 
 class ScrapyDemo01Pipeline:
     def process_item(self, item, spider):
+        print(spider)
+        print(item)
+        return item
+
+
+class ScrapyDemo02Pipeline:
+    def process_item(self, item, spider):
+        print(spider)
+        print("02="+str(item))
         return item
